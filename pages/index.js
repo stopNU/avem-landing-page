@@ -1,16 +1,14 @@
 import Head from "next/head";
 import DefaultLayout from "../layouts";
-//import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import { RichText } from "prismic-reactjs";
-import { linkResolver } from "../prismic-configuration";
+import styles from "../styles/Home.module.scss";
+import Header from "../components/UI/Header";
 
 import SliceZone from "../components/slices/SliceZone";
 import { Client } from "../utils/prismicHelpers";
 
 export default function Home(props) {
   const { data } = props.doc;
-  console.log("props", props);
+
   return (
     <DefaultLayout>
       <div className={styles.container}>
@@ -21,11 +19,12 @@ export default function Home(props) {
         </Head>
 
         <main className={styles.main}>
-          <div>
-            {RichText.asText(data.header_text)}
-            <RichText render={data.header_text} linkResolver={linkResolver}/>
-          </div>
-          <h1>{data.page_title[0].text}</h1>
+          <Header 
+            title={data.header_title[0].text} 
+            text={data.header_text} 
+            imageUrl={data.header_background_image.url}
+          />
+
           {data.page_content && <SliceZone sliceZone={data.page_content} />}
         </main>
 
