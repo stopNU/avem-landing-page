@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.list {
+  list-style: none;
+  display: flex;
+  column-gap: 20px;
+  li {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 24px;
+    color: $brand-color-light;
+  }
+}

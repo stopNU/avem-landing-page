@@ -1,15 +1,15 @@
-import styles from "./Header.module.scss";
+import styles from "./HeroSection.module.scss";
 import ContentWrapper from "./ContentWrapper";
 import Image from "next/image";
 
 import { RichText } from "prismic-reactjs";
 import { linkResolver } from "../../prismic-configuration";
 
-const Header = (props) => {
+const HeroSection = (props) => {
   const { title, text, imageUrl } = props;
 
   return (
-    <div className={styles.header}>
+    <div className={styles.hero} id="header">
       <ContentWrapper className={styles.content}>
         <div className={styles.text}>
           <h1
@@ -30,4 +30,4 @@ const Header = (props) => {
     </div>
   );
 };
-export default Header;
+export default HeroSection;

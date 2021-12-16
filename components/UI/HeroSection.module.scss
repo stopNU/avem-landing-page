@@ -1,0 +1,23 @@
+.hero {
+    width: 100%;
+    height: 750px;
+    position: relative;
+    .text {
+      position: relative;
+      z-index: 1;
+    }
+    .bgImage {
+      max-height: 750px !important;
+      z-index: 0;
+    }
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .text {
+      max-width: 370px;
+    }
+  }
+  
