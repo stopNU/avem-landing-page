@@ -1,0 +1,118 @@
+{
+  "id": "simple_grid",
+  "type": "SharedSlice",
+  "name": "SimpleGrid",
+  "description": "SimpleGrid",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SimpleGrid",
+      "primary": {
+        "sectionId": {
+          "config": {
+            "label": "sectionId",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "preformatted"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your feature"
+          }
+        },
+        "backgroundColor": {
+          "config": {
+            "label": "backgroundColor",
+            "placeholder": ""
+          },
+          "type": "Color"
+        }
+      },
+      "items": {
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        }
+      }
+    },
+    {
+      "id": "gridWith2Columns",
+      "name": "Grid - 2 Columns",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SimpleGrid",
+      "primary": {
+        "sectionId": {
+          "config": {
+            "label": "sectionId",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "preformatted"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your feature"
+          }
+        },
+        "backgroundColor": {
+          "config": {
+            "label": "backgroundColor",
+            "placeholder": ""
+          },
+          "type": "Color"
+        }
+      },
+      "items": {
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "icon": {
+          "config": {
+            "label": "icon",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import Roadmap from "./Roadmap";
-//import Quote from './Quote'
+import SimpleGrid from './SimpleGrid'
 
 /*
 import {
@@ -17,6 +17,8 @@ const SliceZone = ({ sliceZone }) => (
       switch (slice.slice_type) {
         case "roadmap":
           return <Roadmap slice={slice} key={`slice-${index}`} />;
+        case "simple_grid":
+          return <SimpleGrid slice={slice} key={`slice-${index}`} />;
         /*case ('quote'):
           return <Quote slice={slice} key={`slice-${index}`} />
         case ('full_width_image'):
