@@ -1,0 +1,16 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 200px;
+  z-index: 1;
+  position: relative;
+  p {
+    margin: 15px 0 30px;
+  }
+}
+
+.buttons {
+  display: flex;
+  column-gap: 30px;
+}

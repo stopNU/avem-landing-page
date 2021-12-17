@@ -1,6 +1,8 @@
 const ContentWrapper = (props) => {
+  const classes = props.className ? props.className + " content-wrapper" : "content-wrapper";
+
   return (
-    <div className={props.className + " content-wrapper"}>{props.children}</div>
+    <div className={classes}>{props.children}</div>
   );
 };
 export default ContentWrapper;

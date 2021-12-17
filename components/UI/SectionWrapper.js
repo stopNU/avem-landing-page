@@ -1,9 +1,16 @@
 const SectionWrapper = (props) => {
-  console.log("props", props, props.className);
-  const classes = props.className ? props.className + " section-wrapper" : "section-wrapper";
-  
+  let classes = props.className
+    ? props.className + " section-wrapper"
+    : "section-wrapper";
+
+  if (props.big) {
+    classes += " big-section";
+  }
+
   return (
-    <div id={props.id} className={classes}>{props.children}</div>
+    <section id={props.id} className={classes}>
+      {props.children}
+    </section>
   );
 };
 export default SectionWrapper;

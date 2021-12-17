@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss";
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  text-align: center;
+  margin-top: 40px;
+  > div {
+    position: relative;
+    @media only screen and (min-width: $media-mobile) {
+      min-height: 226px;
+    }
+  }
+  h3 {
+    color: $brand-color;
+  }
+  .icon {
+    position: absolute;
+    color: #63d586;
+    top: 33px;
+    right: 30px;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+}
+
+.completed {
+  background: linear-gradient(180deg, #ffffff 0%, #c6fcde 439.82%);
+}
+
+.intro {
+  text-align: center;
+  max-width: 600px;
+}
+
+.background {
+  /*background: linear-gradient(
+    69.94deg,
+    rgba(242, 245, 249, 0.6) 20.19%,
+    rgba(255, 255, 255, 0.6) 74.82%
+  );
+  backdrop-filter: blur(20px);
+  position: relative;*/
+}
+
+.bgImage {
+  z-index: 0;
+  //backdrop-filter: blur(120px);
+}
+
+.container {
+  position: relative;
+}
