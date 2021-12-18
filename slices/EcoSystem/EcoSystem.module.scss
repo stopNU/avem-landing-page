@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.title-section {
+  text-align: center;
+  background-color: $brand-color;
+  color: #fff;
+  padding-bottom: 160px;
+}
+
+.product-section {
+  padding-top: 0;
+  margin-top: -120px;
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+}
+
+.product{
+  &.green{
+    background: linear-gradient(180deg, #FFFFFF 50%, #7DB68D 392.72%);
+  }
+  &.brand{
+    background: linear-gradient(180deg, #FFFFFF 50%, $brand-color 392.72%);
+  }
+  &.red{
+    background: linear-gradient(180deg, #FFFFFF 50%, #E3658E 392.72%);
+  }
+  &.orange{
+    background: linear-gradient(180deg, #FFFFFF 50%, #CB6E37 392.72%);
+  }
+  &.blue{
+    background: linear-gradient(180deg, #FFFFFF 50%, #51ABE0 392.72%);
+  }
+  &.cyan{
+    background: linear-gradient(180deg, #FFFFFF 50%, #52BAA8 392.72%);
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 36px 32px 0;
+  .text {
+    .title > * {
+      color: $brand-color;
+      font-weight: 800;
+    }
+  }
+  .image {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 30px;
+  }
+}

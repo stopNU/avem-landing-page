@@ -5,6 +5,9 @@ import styles from "./MeetTheTeam.module.scss";
 import { SiLinkedin } from "react-icons/si";
 import { RichText } from "prismic-reactjs";
 
+//const contentHTML = prismicH.asHTML(prismicDoc.data.example_rich_text)
+
+
 const MeetTheTeam = ({ slice }) => (
   <SectionWrapper id="meet-the-team" className={styles.section}>
     <ContentWrapper>

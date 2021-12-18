@@ -2,6 +2,7 @@ import React from "react";
 import Roadmap from "./Roadmap";
 import SimpleGrid from "./SimpleGrid";
 import MeetTheTeam from "./MeetTheTeam";
+import EcoSystem from "./EcoSystem";
 
 /*
 import {
@@ -22,9 +23,9 @@ const SliceZone = ({ sliceZone }) => (
           return <SimpleGrid slice={slice} key={`slice-${index}`} />;
         case "meet_the_team":
           return <MeetTheTeam slice={slice} key={`slice-${index}`} />;
-        /*case ('full_width_image'):
-          return <FullWidthImage slice={slice} key={`slice-${index}`} />
-        case ('image_gallery'):
+        case ('ecosystem'):
+          return <EcoSystem slice={slice} key={`slice-${index}`} />
+        /*case ('image_gallery'):
           return <ImageGallery slice={slice} key={`slice-${index}`} />
         case ('image_highlight'):
           return <ImageHighlight slice={slice} key={`slice-${index}`} />*/
