@@ -6,7 +6,7 @@ const Header = ({ menu }) => {
   return (
     <div className={styles.header}>
       <div>
-        <Image src={menu.data.logo.url} width={100} height={50} />
+        <Image src={menu.data.logo.url} width={120} height={50} />
         <Menu items={menu.data.menu_links} />
         <p>Go to App</p>
       </div>

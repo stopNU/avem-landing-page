@@ -1,0 +1,31 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  padding: 60px 30px;
+}
+
+.menu {
+  display: flex;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 90px;
+    row-gap: 16px;
+  }
+}
+
+.copyright {
+  margin-top: 45px;
+  color: #1e2833;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.socialItem{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    p{
+        font-size: 0.875rem;
+    }
+}
