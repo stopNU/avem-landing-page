@@ -25,6 +25,7 @@ const Footer = (props) => {
       <div>
         {menu.data.platforms.map((platform) => (
           <SocialMediaItem
+            key={platform.platform}
             className={styles.socialItem}
             platform={platform.platform}
             label={platform.label}

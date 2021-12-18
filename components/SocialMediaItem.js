@@ -6,8 +6,7 @@ import {
   SiMedium,
 } from "react-icons/si";
 
-const SocialItem = ({label, platform, link, className}) => {
- 
+const SocialItem = ({ label, platform, link, className }) => {
   let icon;
 
   switch (platform) {
@@ -30,7 +29,7 @@ const SocialItem = ({label, platform, link, className}) => {
       icon = "";
   }
   return (
-    <a href={link.url} target="_blank" className={className}>
+    <a href={link.url} target="_blank" rel="noreferrer" className={className}>
       {icon}
       <p>{label}</p>
     </a>
