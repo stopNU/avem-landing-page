@@ -1,6 +1,7 @@
 import React from "react";
 import Roadmap from "./Roadmap";
-import SimpleGrid from './SimpleGrid'
+import SimpleGrid from "./SimpleGrid";
+import MeetTheTeam from "./MeetTheTeam";
 
 /*
 import {
@@ -19,9 +20,9 @@ const SliceZone = ({ sliceZone }) => (
           return <Roadmap slice={slice} key={`slice-${index}`} />;
         case "simple_grid":
           return <SimpleGrid slice={slice} key={`slice-${index}`} />;
-        /*case ('quote'):
-          return <Quote slice={slice} key={`slice-${index}`} />
-        case ('full_width_image'):
+        case "meet_the_team":
+          return <MeetTheTeam slice={slice} key={`slice-${index}`} />;
+        /*case ('full_width_image'):
           return <FullWidthImage slice={slice} key={`slice-${index}`} />
         case ('image_gallery'):
           return <ImageGallery slice={slice} key={`slice-${index}`} />
