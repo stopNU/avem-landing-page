@@ -6,7 +6,7 @@ import { SiLinkedin } from "react-icons/si";
 import { RichText } from "prismic-reactjs";
 
 const MeetTheTeam = ({ slice }) => (
-  <SectionWrapper id="roadmap" className={styles.section}>
+  <SectionWrapper id="meet-the-team" className={styles.section}>
     <ContentWrapper>
       {slice.primary.title && (
         <h2
@@ -18,7 +18,7 @@ const MeetTheTeam = ({ slice }) => (
       )}
     </ContentWrapper>
     <ContentWrapper className={styles.team}>
-      {slice.items.map((member) => (
+      {slice?.items?.map((member) => (
         <div key={member.name}>
           <Image
             src={member.profile_picture.url}

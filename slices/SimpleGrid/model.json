@@ -2,6 +2,7 @@
   "id": "simple_grid",
   "type": "SharedSlice",
   "name": "SimpleGrid",
+  "display" : "grid",
   "description": "SimpleGrid",
   "variations": [
     {
