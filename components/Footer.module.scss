@@ -1,16 +1,30 @@
+@import "../styles/variables.scss";
+
 .wrapper {
   display: grid;
-  grid-template-columns: 3fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  @media only screen and (min-width: $media-mobile) {
+    grid-template-columns: 3fr 2fr 1fr;
+  }
   padding: 60px 30px;
 }
 
 .menu {
-  display: flex;
+  display: none;
+  @media only screen and (min-width: $media-mobile) {
+    display: flex;
+  }
   ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 90px;
-    row-gap: 16px;
+    @media only screen and (min-width: $media-mobile) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 45px;
+      row-gap: 16px;
+    }
+    @media only screen and (min-width: $media-tablet) {
+      column-gap: 90px;
+    }
   }
 }
 
@@ -21,11 +35,11 @@
   opacity: 0.5;
 }
 
-.socialItem{
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-    p{
-        font-size: 0.875rem;
-    }
+.socialItem {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  p {
+    font-size: 0.875rem;
+  }
 }
