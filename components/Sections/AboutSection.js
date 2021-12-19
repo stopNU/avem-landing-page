@@ -30,7 +30,7 @@ const AboutSection = (props) => {
             render={description}
             linkResolver={linkResolver}
           />
-          <div className={styles.buttons}>
+          {/*<div className={styles.buttons}>
             {buttons.map((button) => (
               <Button
                 key={button.label}
@@ -40,7 +40,7 @@ const AboutSection = (props) => {
                 {button.label}
               </Button>
             ))}
-          </div>
+            </div>*/}
         </div>
         <div>
           <Image

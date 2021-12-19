@@ -1,18 +1,18 @@
 import styles from "./Header.module.scss";
 import Image from "next/image";
 import Menu from "./Menu";
+import ContentWrapper from "../UI/ContentWrapper";
 
 const Header = ({ menu }) => {
   return (
     <div className={styles.header}>
-      <div className={styles.desk}>
-        <Image src={menu.data.logo.url} width={120} height={50} />
+      <ContentWrapper className={styles.desk}>
+        <span className={styles.logo}>
+          <Image src={menu.data.logo.url} width={120} height={50} />
+        </span>
         <Menu items={menu.data.menu_links} />
-        <p>Go to App</p>
-      </div>
-      <div className={styles.mobile}>
-       mobile
-      </div>
+      </ContentWrapper>
+      <div className={styles.mobile}>mobile</div>
     </div>
   );
 };
