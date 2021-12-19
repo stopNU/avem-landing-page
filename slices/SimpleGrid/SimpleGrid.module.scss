@@ -8,10 +8,11 @@
 .grid {
   display: grid;
   gap: 24px;
+  margin-top: 30px;
   @media only screen and (min-width: $media-mobile) {
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  
-  margin-top: 40px;}
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin-top: 40px;
+  }
   .item {
     display: flex;
     align-items: center;

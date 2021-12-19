@@ -1,12 +1,23 @@
+@import '../../styles/variables.scss';
+
 .about {
+  @media only screen and (min-width: $media-mobile) {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   column-gap: 200px;
+  }
   z-index: 1;
   position: relative;
   p {
     margin: 15px 0 30px;
+  }
+}
+
+.bgImage{
+  display: none;
+  @media only screen and (min-width: $media-xsmall) {
+    display: block;
   }
 }
 

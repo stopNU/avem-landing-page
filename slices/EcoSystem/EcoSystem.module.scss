@@ -12,29 +12,32 @@
   margin-top: -120px;
   .products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    @media only screen and (min-width: $media-mobile) {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
     gap: 24px;
   }
 }
 
-.product{
-  &.green{
-    background: linear-gradient(180deg, #FFFFFF 50%, #7DB68D 392.72%);
+.product {
+  &.green {
+    background: linear-gradient(180deg, #ffffff 50%, #7db68d 392.72%);
   }
-  &.brand{
-    background: linear-gradient(180deg, #FFFFFF 50%, $brand-color 392.72%);
+  &.brand {
+    background: linear-gradient(180deg, #ffffff 50%, $brand-color 392.72%);
   }
-  &.red{
-    background: linear-gradient(180deg, #FFFFFF 50%, #E3658E 392.72%);
+  &.red {
+    background: linear-gradient(180deg, #ffffff 50%, #e3658e 392.72%);
   }
-  &.orange{
-    background: linear-gradient(180deg, #FFFFFF 50%, #CB6E37 392.72%);
+  &.orange {
+    background: linear-gradient(180deg, #ffffff 50%, #cb6e37 392.72%);
   }
-  &.blue{
-    background: linear-gradient(180deg, #FFFFFF 50%, #51ABE0 392.72%);
+  &.blue {
+    background: linear-gradient(180deg, #ffffff 50%, #51abe0 392.72%);
   }
-  &.cyan{
-    background: linear-gradient(180deg, #FFFFFF 50%, #52BAA8 392.72%);
+  &.cyan {
+    background: linear-gradient(180deg, #ffffff 50%, #52baa8 392.72%);
   }
 }
 
@@ -45,7 +48,10 @@
   border: 1px solid #e4e4e4;
   box-sizing: border-box;
   border-radius: 16px;
-  padding: 36px 32px 0;
+  padding: 24px 20px 0;
+  @media only screen and (min-width: $media-mobile) {
+    padding: 36px 32px 0;
+  }
   .text {
     .title > * {
       color: $brand-color;
@@ -54,7 +60,10 @@
   }
   .image {
     display: flex;
-    align-self: flex-end;
-    margin-top: 30px;
+    width: 100%;
+    @media only screen and (min-width: $media-mobile) {
+      align-self: flex-end;
+      margin-top: 30px;
+    }
   }
 }

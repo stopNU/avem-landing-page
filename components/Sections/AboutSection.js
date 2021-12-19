@@ -2,7 +2,7 @@ import styles from "./AboutSection.module.scss";
 import ContentWrapper from "../UI/ContentWrapper";
 import SectionWrapper from "../UI/SectionWrapper";
 import Image from "next/image";
-import Button from '../UI/Button';
+import Button from "../UI/Button";
 
 import { RichText } from "prismic-reactjs";
 import { linkResolver } from "../../prismic-configuration";
@@ -12,13 +12,14 @@ const AboutSection = (props) => {
 
   return (
     <SectionWrapper id="about" big>
-      <Image
-        className={styles.bgImage}
-        src={backgroundImage.url}
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center"
-      />
+      <span className={styles.bgImage}>
+        <Image
+          src={backgroundImage.url}
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+        />
+      </span>
       <ContentWrapper className={styles.about}>
         <div>
           <h2
@@ -26,10 +27,7 @@ const AboutSection = (props) => {
               __html: title,
             }}
           ></h2>
-          <RichText
-            render={description}
-            linkResolver={linkResolver}
-          />
+          <RichText render={description} linkResolver={linkResolver} />
           {/*<div className={styles.buttons}>
             {buttons.map((button) => (
               <Button
@@ -42,7 +40,7 @@ const AboutSection = (props) => {
             ))}
             </div>*/}
         </div>
-        <div>
+        <div className={styles.image}>
           <Image
             src={image.url}
             width={image.dimensions.width}

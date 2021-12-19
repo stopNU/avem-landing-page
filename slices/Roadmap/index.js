@@ -25,11 +25,10 @@ const Roadmap = ({ slice }) => (
             <h2>Template slice, update me!</h2>
           )}
         </span>
-        {slice.primary.description ? (
+        {slice.primary.description &&
+        slice.primary.description[0].text.length > 0 ? (
           <RichText render={slice.primary.description} />
-        ) : (
-          <p>start by editing this slice from inside Prismic builder!</p>
-        )}
+        ) : null}
       </ContentWrapper>
       <ContentWrapper>
         <div className={styles.list}>
