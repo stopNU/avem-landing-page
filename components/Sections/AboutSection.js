@@ -22,6 +22,7 @@ const AboutSection = (props) => {
       </span>
       <ContentWrapper className={styles.about}>
         <div>
+          <h6>WHAT IS AVEM?</h6>
           <h2
             dangerouslySetInnerHTML={{
               __html: title,

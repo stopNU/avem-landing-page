@@ -105,6 +105,20 @@ h3 {
     font-size: 1.5rem;
   }
 }
+h6 {
+  //obs: very specific for about section. change if using again.
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin: 0 0 20px;
+  background: linear-gradient(90deg, #4f01b0 0%, #7f2ee8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @media only screen and (min-width: $media-mobile) {
+    font-size: 0.875rem;
+  }
+}
 
 p {
   font-size: 1rem;
