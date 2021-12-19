@@ -6,7 +6,7 @@ import SocialMediaItem from "./SocialMediaItem";
 
 const Footer = (props) => {
   const { menu } = props;
-  console.log("footer", props);
+  
   return (
     <ContentWrapper className={styles.wrapper}>
       <div>
@@ -14,7 +14,7 @@ const Footer = (props) => {
         <p>The DeFi 3.0 for Securites.</p>
         <p>Merging Retail and Institutions.</p>
         <p className={styles.copyright}>
-          Copyright © 2021. Avem Finance. All rights reserved.
+          Copyright © 2021 Avem. All rights reserved.
         </p>
       </div>
 

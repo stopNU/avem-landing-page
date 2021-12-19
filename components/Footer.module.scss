@@ -14,16 +14,22 @@
   display: none;
   @media only screen and (min-width: $media-mobile) {
     display: flex;
+    max-height: 200px;
   }
   ul {
+    column-count: 2;
     @media only screen and (min-width: $media-mobile) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: block;
+      //grid-template-columns: repeat(2, 1fr);
+      //grid-template-rows: repeat(1, 1fr);
       column-gap: 45px;
       row-gap: 16px;
     }
     @media only screen and (min-width: $media-tablet) {
       column-gap: 90px;
+    }
+    li{
+      margin-bottom: 15px;
     }
   }
 }
@@ -39,6 +45,9 @@
   display: flex;
   align-items: center;
   column-gap: 15px;
+  svg {
+    min-width: 16px;
+  }
   p {
     font-size: 0.875rem;
   }
