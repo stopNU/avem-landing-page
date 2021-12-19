@@ -2,13 +2,20 @@
 
 .list {
   list-style: none;
-  display: flex;
-  column-gap: 20px;
+  @media only screen and (min-width: $media-mobile) {
+    display: flex;
+    column-gap: 20px;
+  }
   li {
     cursor: pointer;
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    @media only screen and (min-width: $media-mobile) {
+      font-size: 0.875rem;
+      margin-bottom: 0px;
+    }
     line-height: 24px;
-    color: #4D3658;
+    color: #4d3658;
   }
 }

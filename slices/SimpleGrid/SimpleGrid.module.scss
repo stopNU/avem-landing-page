@@ -16,8 +16,10 @@
   .item {
     display: flex;
     align-items: center;
-    text-align: center;
     column-gap: 30px;
+    @media only screen and (min-width: $media-mobile) {
+      text-align: center;
+    }
   }
 }
 

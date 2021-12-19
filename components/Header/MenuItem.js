@@ -4,7 +4,11 @@ const MenuItem = (props) => {
       const element = document.getElementById(props.scrollToId);
       element.scrollIntoView({ behavior: "smooth" });
     }
+    if(props.onCloseHandler){
+      props.onCloseHandler();
+    }
   };
+
   return <li onClick={clickHandler}>{props.children}</li>;
 };
 

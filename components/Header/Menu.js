@@ -5,7 +5,11 @@ const Menu = (props) => {
   return (
     <ul className={styles.list}>
       {props.items.map((item, index) => (
-        <MenuItem key={index} scrollToId={item.section_id}>
+        <MenuItem
+          key={index}
+          scrollToId={item.section_id}
+          onCloseHandler={props.closeHandler}
+        >
           {item.label}
         </MenuItem>
       ))}
