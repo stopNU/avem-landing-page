@@ -38,6 +38,7 @@ const MeetTheTeam = ({ slice }) => {
             {member.linkedin_link.url && (
               <a
                 href={member.linkedin_link.url}
+                rel="noopener"
                 target="_blank"
                 title="linkedin"
               >

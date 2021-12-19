@@ -16,7 +16,7 @@ const Header = ({ menu }) => {
 
   const onClickCloseHandler = () => {
     setToggleMobileMenu(false);
-  }
+  };
 
   const mobileMenuIcon = !toggleMobileMenu ? (
     <GiHamburgerMenu onClick={toggleMobileMenuHandler} />
@@ -28,18 +28,31 @@ const Header = ({ menu }) => {
     <div className={styles.header}>
       <ContentWrapper className={styles.desk}>
         <span className={styles.logo}>
-          <Image src={menu.data.logo.url} width={120} height={50} />
+          <Image
+            src={menu.data.logo.url}
+            alt="Avem logo"
+            width={120}
+            height={50}
+          />
         </span>
         <Menu items={menu.data.menu_links} />
       </ContentWrapper>
       <ContentWrapper className={styles.mobile}>
         <span className={styles.logo}>
-          <Image src={menu.data.logo.url} width={90} height={50} />
+          <Image
+            src={menu.data.logo.url}
+            alt="Avem logo"
+            width={90}
+            height={50}
+          />
         </span>
         <div>{mobileMenuIcon}</div>
         {toggleMobileMenu && (
           <Modal show={toggleMobileMenu}>
-            <Menu items={menu.data.menu_links} closeHandler={onClickCloseHandler} />
+            <Menu
+              items={menu.data.menu_links}
+              closeHandler={onClickCloseHandler}
+            />
           </Modal>
         )}
       </ContentWrapper>

@@ -10,7 +10,12 @@ const Footer = (props) => {
   return (
     <ContentWrapper className={styles.wrapper}>
       <div>
-        <Image src={menu.data.logo.url} width={120} height={50} />
+        <Image
+          src={menu.data.logo.url}
+          alt="Avem Logo"
+          width={120}
+          height={50}
+        />
         <p>The DeFi 3.0 for Securites.</p>
         <p>Merging Retail and Institutions.</p>
         <p className={styles.copyright}>

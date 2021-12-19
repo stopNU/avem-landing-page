@@ -15,6 +15,7 @@ const AboutSection = (props) => {
       <span className={styles.bgImage}>
         <Image
           src={backgroundImage.url}
+          alt="Background image"
           layout="fill"
           objectFit="cover"
           objectPosition="center"
@@ -44,6 +45,7 @@ const AboutSection = (props) => {
         <div className={styles.image}>
           <Image
             src={image.url}
+            alt={image.alt}
             width={image.dimensions.width}
             height={image.dimensions.height}
           />

@@ -29,7 +29,7 @@ export default function Home(props) {
           <HeroSection
             title={data.header_title[0].text}
             text={data.header_text}
-            imageUrl={data.header_background_image.url}
+            backgroundImage={data.header_background_image}
           />
 
           <AboutSection

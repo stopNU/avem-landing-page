@@ -12,6 +12,7 @@ const Roadmap = ({ slice }) => (
     <Image
       className={styles.bgImage}
       src={slice.primary.background.url}
+      alt="background"
       layout="fill"
       objectFit="cover"
       objectPosition="center"

@@ -7,7 +7,10 @@ import Card from "../../components/UI/Card";
 import Image from "next/image";
 
 const SimpleGrid = ({ slice }) => (
-  <SectionWrapper color={slice.primary.backgroundColor} id={slice.primary.sectionId}>
+  <SectionWrapper
+    color={slice.primary.backgroundColor}
+    id={slice.primary.sectionId}
+  >
     <ContentWrapper className={styles.intro}>
       <span className="title">
         {slice.primary.title && (
@@ -34,11 +37,14 @@ const SimpleGrid = ({ slice }) => (
       {slice.items.length > 0 &&
         slice.items.map((item, index) => (
           <Card key={index} className={styles.item}>
-            {item.icon && <Image
-              src={item.icon.url}
-              width={item.icon.dimensions.width}
-              height={item.icon.dimensions.height}
-            />}
+            {item.icon && (
+              <Image
+                src={item.icon.url}
+                alt="Icon"
+                width={item.icon.dimensions.width}
+                height={item.icon.dimensions.height}
+              />
+            )}
             <RichText render={item.title} />
           </Card>
         ))}

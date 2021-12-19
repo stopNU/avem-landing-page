@@ -6,7 +6,7 @@ import { RichText } from "prismic-reactjs";
 import { linkResolver } from "../../prismic-configuration";
 
 const HeroSection = (props) => {
-  const { title, text, imageUrl } = props;
+  const { title, text, backgroundImage } = props;
 
   return (
     <div className={styles.hero} id="header">
@@ -22,7 +22,8 @@ const HeroSection = (props) => {
       </ContentWrapper>
       <Image
         className={styles.bgImage}
-        src={imageUrl}
+        alt="Background"
+        src={backgroundImage.url}
         layout="fill"
         objectFit="cover"
         objectPosition="center"
