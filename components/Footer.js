@@ -6,7 +6,7 @@ import SocialMediaItem from "./SocialMediaItem";
 
 const Footer = (props) => {
   const { menu } = props;
-  
+
   return (
     <ContentWrapper className={styles.wrapper}>
       <div>
@@ -25,7 +25,7 @@ const Footer = (props) => {
       <div>
         {menu.data.platforms.map((platform) => (
           <SocialMediaItem
-            key={platform.platform}
+            key={platform.label}
             className={styles.socialItem}
             platform={platform.platform}
             label={platform.label}
